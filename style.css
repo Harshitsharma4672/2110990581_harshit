@@ -1,0 +1,141 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/free-vector/blue-fluid-patterned-background_53876-100798.jpg') center/cover no-repeat;
+    color: #333;
+}
+
+
+
+header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+main {
+    width: 80%;
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: rgb(185, 201, 210);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(41, 166, 244, 0.981);
+}
+
+.add-task,
+.task-list,
+.completed-task-list {
+    margin-bottom: 2rem;
+}
+
+.add-task input {
+    padding: 0.9rem;
+    width: 65%;
+    margin-left: 20px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 16px;
+}
+
+#category {
+    margin-left: -5px;
+    width: 20%;
+    height: 40px;
+    background-color: #eaeaea;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.add-task button {
+    width: 15%;
+    padding: 0.87rem;
+    background-color: #3371a1;
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input,
+select,
+button {
+    margin: 0.5rem;
+    padding: 0.3rem;
+}
+
+#category .add-task button:hover {
+    background-color: #000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.completeButton {
+    margin-left: 70%;
+}
+
+.completeButton,
+.deleteButton {
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.completeButton {
+    background-color: #2bd33c;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.completeButton:hover {
+    background-color: #7b7b7b;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+.completed-task-list {
+    opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+    }
+}
